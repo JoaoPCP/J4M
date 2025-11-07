@@ -1,4 +1,4 @@
-import { Sidebar, Menu, MenuItem, SubMenu } from "react-pro-sidebar";
+import { Sidebar, Menu, MenuItem, SubMenu, SidebarFooter } from "react-pro-sidebar";
 import j4m_logo from "../assets/logo_j4m.svg";
 import home_icon from "../assets/home_icon.svg";
 import champions_icon from "../assets/champions_icon.svg";
@@ -7,7 +7,7 @@ import team_icon from "../assets/team_icon.svg";
 import settings_icon from "../assets/settings_icon.svg";
 
 function SideBar() {
-  const arr = Array.apply(null, Array(4)).map(function () {});
+  const arr = [1, 2, 3, 4];
 
   console.log(arr);
   return (
@@ -31,14 +31,12 @@ function SideBar() {
           </div>
 
           <SubMenu className="font-orbitron text-gray text-2xl mt-15" label="MINHAS JAMS">
-            <div>
-              {arr.map(() => {
-                <div className="w-30 h-30 bg-white" src=""></div>;
-              })}
-            </div>
+            <MenuItem>jam1</MenuItem>
+            <MenuItem>jam2</MenuItem>
+            <MenuItem>jam3</MenuItem>
           </SubMenu>
-          <MenuItem className="" icon={<img src={settings_icon} alt="team icon" />} />
         </Menu>
+        <MenuItem className="mt-auto" icon={<img src={settings_icon} alt="team icon" />} />
       </div>
     </Sidebar>
   );
