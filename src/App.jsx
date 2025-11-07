@@ -1,9 +1,10 @@
 import { useState } from "react";
+import Oficials from "./components/oficials";
 
 function App() {
   return (
     <>
-      <div className="text-xl">adawdas</div>
+      <Oficials />
     </>
   );
 }
