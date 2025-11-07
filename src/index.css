@@ -9,6 +9,9 @@
     --color-red: #FF0000;
     --color-green: #00FF15;
     --color-yellow: #FFE100;
+    --color-black: #121212FF;
+    --color-gray: #827676;
+    --color-white: #F8F8F8;
 }
 
 body{
