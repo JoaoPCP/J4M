@@ -4,7 +4,10 @@ function SidebarLayout(){
     return (
         <div className="flex flex-row">
             {/* <SideBar/> ainda em desenvolvimento */}
-            <Outlet/>
+            <div className="pt-21 px-26 w-full">
+                <Outlet/>
+            </div>
+            
         </div>
     )
 }
