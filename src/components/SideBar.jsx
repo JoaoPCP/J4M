@@ -1,4 +1,4 @@
-import { Sidebar, Menu, MenuItem, SubMenu, SidebarFooter } from "react-pro-sidebar";
+import { Sidebar, Menu, MenuItem, SubMenu } from "react-pro-sidebar";
 import j4m_logo from "../assets/logo_j4m.svg";
 import home_icon from "../assets/home_icon.svg";
 import champions_icon from "../assets/champions_icon.svg";

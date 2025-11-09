@@ -1,4 +1,4 @@
-import CardComunnity from "./CardComunnity";
+import CardComunnity from "../../../components/CardComunnity";
 
 const arr = Array.apply(null, Array(24)).map(function () {});
 

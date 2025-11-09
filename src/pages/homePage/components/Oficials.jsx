@@ -1,4 +1,4 @@
-import CardOficialJam from "./CardOficialJam";
+import CardOficialJam from "../../../components/CardOficialJam";
 
 function Oficials() {
   return (
