@@ -6,7 +6,7 @@ import team_icon from "../assets/team_icon.svg";
 import settings_icon from "../assets/settings_icon.svg";
 import { Link } from "react-router-dom";
 
-function SideBar() {
+function SideBar({ logged }) {
   return (
     <nav className="w-113 bg-black flex flex-col h-full min-h-screen py-7 sticky top-0">
       <ul className="flex flex-col w-full">
@@ -31,23 +31,31 @@ function SideBar() {
             <p>BIBLIOTECA</p>
           </li>
         </Link>
-        <Link to="/equipe" className="transition duration-300 hover:scale-105">
-          <li className="font-orbitron text-gray text-2xl py-2 flex items-center gap-5 px-20">
-            <img className="w-10 h-10" src={team_icon} alt="library icon" />
-            <p>EQUIPE</p>
-          </li>
-        </Link>
-
-        <li className="font-orbitron text-gray text-2xl py-2 flex flex-col gap-5 px-20 mt-20">
-          <Link to="/myjams" className="transition duration-300 hover:scale-105">
-            <p>MINHAS JAMS</p>
+        {logged ? (
+          <Link to="/equipe" className="transition duration-300 hover:scale-105">
+            <li className="font-orbitron text-gray text-2xl py-2 flex items-center gap-5 px-20">
+              <img className="w-10 h-10" src={team_icon} alt="library icon" />
+              <p>EQUIPE</p>
+            </li>
           </Link>
-          <ul className="font-orbitron text-gray text-2xl flex flex-col">
-            <li className="py-2">jam1</li>
-            <li className="py-2">jam2</li>
-            <li className="py-2">jam3</li>
-          </ul>
-        </li>
+        ) : (
+          <></>
+        )}
+
+        {logged ? (
+          <li className="font-orbitron text-gray text-2xl py-2 flex flex-col gap-5 px-20 mt-20">
+            <Link to="/myjams" className="transition duration-300 hover:scale-105">
+              <p>MINHAS JAMS</p>
+            </Link>
+            <ul className="font-orbitron text-gray text-2xl flex flex-col">
+              <li className="py-2">jam1</li>
+              <li className="py-2">jam2</li>
+              <li className="py-2">jam3</li>
+            </ul>
+          </li>
+        ) : (
+          <></>
+        )}
       </ul>
       <Link className="mt-auto transition duration-300 hover:scale-105" to="/configuracoes">
         <li className="pl-18 list-none w-full">
