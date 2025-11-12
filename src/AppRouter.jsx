@@ -10,14 +10,16 @@ import CreateJam from "./pages/createJam/CreateJam";
 function AppRouter() {
   return (
     <Routes>
-      <Route element={<SidebarLayout />}>
+      <Route element={<SidebarLayout logged />}>
         <Route path="/" element={<HomePage />} />
         <Route path="/campeoes" element={<Campeoes />} />
         <Route path="/upload-jam" element={<UploadJam />} />
-        <Route path="/create-jam" element={<CreateJam/>}/>
+        <Route path="/create-jam" element={<CreateJam />} />
       </Route>
-      <Route path="/login" element={<Login />} />
-      <Route path="/cadastro" element={<Cadastro />} />
+      <Route element={<SidebarLayout />}>
+        <Route path="/login" element={<Login />} />
+        <Route path="/cadastro" element={<Cadastro />} />
+      </Route>
     </Routes>
   );
 }
