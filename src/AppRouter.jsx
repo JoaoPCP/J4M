@@ -12,10 +12,10 @@ function AppRouter() {
       <Route element={<SidebarLayout />}>
         <Route path="/" element={<HomePage />} />
         <Route path="/campeoes" element={<Campeoes />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/cadastro" element={<Cadastro />} />
         <Route path="/upload-jam" element={<UploadJam />} />
       </Route>
+      <Route path="/login" element={<Login />} />
+      <Route path="/cadastro" element={<Cadastro />} />
     </Routes>
   );
 }
