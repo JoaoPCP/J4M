@@ -4,6 +4,7 @@ import HomePage from "./pages/homePage/HomePage";
 import Campeoes from "./pages/campeoes/Campeoes";
 import Login from "./pages/login/Login";
 import Cadastro from "./pages/cadastro/Cadastro";
+import UploadJam from "./pages/uploadJam/UploadJam";
 
 function AppRouter() {
   return (
@@ -13,6 +14,7 @@ function AppRouter() {
         <Route path="/campeoes" element={<Campeoes/>}/>
         <Route path="/login" element={<Login/>}/>
         <Route path="/cadastro" element={<Cadastro/>}/>
+        <Route path="/upload-jam" element={<UploadJam />} />
       </Route>
     </Routes>
   );

@@ -1,7 +1,7 @@
 function ChampionCard({ champion }) {
   return (
   <div
-      className="size-40 flex flex-col justify-end items-center bg-cover bg-center rounded-2xl p-2"
+      className="size-30 sm:size-60 flex flex-col justify-end items-center bg-cover bg-center rounded-2xl p-2"
       style={{ backgroundImage: `url(${champion.cover})` }}
     >
       <div className="flex flex-col items-center text-white">
