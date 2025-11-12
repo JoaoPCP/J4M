@@ -5,7 +5,9 @@ function SidebarLayout() {
   return (
     <div className="flex">
       <SideBar />
-      <Outlet />
+      <div className="p-10 w-full">
+        <Outlet />
+      </div>
     </div>
   );
 }

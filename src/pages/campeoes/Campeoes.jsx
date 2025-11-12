@@ -1,6 +1,6 @@
 import championCover from "../../assets/CampeoesBase.svg";
 import ChampionCard from "./components/ChampionCard";
-import CustomInput from "../../components/Input";
+import CustomInput from "../../components/inputs/CustomInput";
 
 function Campeoes() {
   const champions = Array.from({ length: 10 }, () => ({
