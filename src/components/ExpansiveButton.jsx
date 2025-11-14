@@ -1,8 +1,4 @@
 import { PlusIcon } from 'lucide-react';
-import React, { Children } from 'react';
-
-// Você pode usar um ícone de uma biblioteca (como react-icons) ou um simples "+"
-// import { FaPlus } from 'react-icons/fa';
 
 export default function ExpandButton({children,className, onClick}) {
   return (
