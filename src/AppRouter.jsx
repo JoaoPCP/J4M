@@ -7,6 +7,7 @@ import Cadastro from "./pages/cadastro/Cadastro";
 import UploadJam from "./pages/uploadJam/UploadJam";
 import CreateJam from "./pages/createJam/CreateJam";
 import Equipe from "./pages/equipe/Equipe";
+import Assinaturas from "./pages/assinaturas/Assinaturas";
 
 function AppRouter() {
   return (
@@ -17,6 +18,7 @@ function AppRouter() {
         <Route path="/upload-jam" element={<UploadJam />} />
         <Route path="/create-jam" element={<CreateJam />} />
         <Route path="/equipe" element={<Equipe />} />
+        <Route path="/assinaturas" element={<Assinaturas />} />
       </Route>
       <Route element={<SidebarLayout />}>
         <Route path="/login" element={<Login />} />
