@@ -7,6 +7,7 @@ function CustomButton(props) {
     rounded = "medium",
     height = "md",
     width = "full",
+    color = "purple",
     className
   } = props;
 
@@ -16,10 +17,24 @@ function CustomButton(props) {
     width,
   });
 
+  var colorcode;
+    switch(color){
+        
+        case "pink":
+            colorcode = "from-[#CF0C94] to-[#FF007F]";
+            break;
+        case "purple":
+        default:
+            colorcode = "from-[#6017C6] to-[#8E2DE2]";
+            break;
+    }
+
   return (
     <button
       onClick={onClick}
-      className={`bg-pink text-white font-russoOne px-3 hover:bg-fuchsia-600 transition
+      className={`cursor-pointer hover:outline-3 uppercase
+        drop-shadow-sm drop-shadow-white text-white
+        font-russoOne px-3 bg-linear-to-t ${colorcode}
         ${borderRadius} ${heightClass} ${widthClass} ${className || ""}
         `}
     >

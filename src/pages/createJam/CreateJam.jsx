@@ -79,7 +79,7 @@ function CreateJam() {
           </div>
         </div>
       </div>
-      <CustomButton width="md" height="lg" className="mt-6 self-end">
+      <CustomButton width="md" height="lg" color="pink" className="mt-6 self-end">
         Criar Jam
       </CustomButton>
     </div>
