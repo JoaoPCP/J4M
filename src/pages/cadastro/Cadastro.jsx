@@ -1,3 +1,5 @@
+import Botao from "../../components/Botao";
+
 function Cadastro() {
   return (
     <div className="flex flex-col gap-10 place-content-center">
@@ -12,7 +14,7 @@ function Cadastro() {
                 <input type="password" placeholder="Digite aqui..." className="bg-black rounded-md p-3 outline-solid outline-white" name="psw" required/>
                 <label for="pswconf"><b>Confirmar Senha</b></label>
                 <input type="password" placeholder="Digite aqui..." className="bg-black rounded-md p-3 outline-solid outline-white" name="pswconf" required/>
-                <button type="submit" className="cursor-pointer uppercase bg-linear-to-t from-pink-700 to-pink drop-shadow-sm drop-shadow-white w-60 p-4 rounded-3xl" >Let's J4M!!</button>
+                <Botao type={"submit"} label={"Let's J4M!!"} cor="rosa" />
             </form>
         </div>
     </div>

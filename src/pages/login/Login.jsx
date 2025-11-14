@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import J4MLogo from "../../assets/logo_j4m.svg";
+import Botao from "../../components/Botao";
 
 
 function Login() {
@@ -14,7 +15,7 @@ function Login() {
                 <label for="psw"><b>Senha</b></label>
                 <input type="password" placeholder="Digite aqui..." className="bg-black rounded-md p-3 outline-solid outline-white" name="psw" required/>
                 <a href="#" className="text-pink underline">Esqueci minha senha</a>
-                <button type="submit" className="cursor-pointer uppercase bg-linear-to-t from-pink-700 to-pink drop-shadow-sm drop-shadow-white w-60 p-4 rounded-3xl">Entrar</button>
+                <Botao type={"submit"} label={"Entrar"} cor="rosa" />
             </form>
             <span className="font-russoOne text-white">Novo por aqui? <Link to="/cadastro" className="text-pink underline">Crie sua Conta J4M!</Link></span>
         </div>
