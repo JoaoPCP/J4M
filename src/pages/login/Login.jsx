@@ -1,5 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 import J4MLogo from "../../assets/logo_j4m.svg";
+import Botao from "../../components/Botao";
 
 function Login() {
   let navigate = useNavigate();
@@ -20,12 +21,7 @@ function Login() {
           <a href="#" className="text-pink underline">
             Esqueci minha senha
           </a>
-          <button
-            type="submit"
-            className="m-auto cursor-pointer uppercase bg-linear-to-t from-pink-700 to-pink drop-shadow-sm drop-shadow-white w-60 p-4 rounded-3xl"
-          >
-            Entrar
-          </button>
+          <Botao type={"submit"} label={"Entrar"} cor="rosa" />
         </form>
         <span className="font-russoOne text-white">
           Novo por aqui?{" "}

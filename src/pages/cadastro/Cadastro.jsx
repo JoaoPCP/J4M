@@ -1,3 +1,4 @@
+import Botao from "../../components/Botao";
 import { useNavigate } from "react-router-dom";
 
 function Cadastro() {
@@ -24,9 +25,7 @@ function Cadastro() {
             Confirmar Senha
             <input type="password" placeholder="Digite aqui..." className="w-full bg-black rounded-md p-3 outline-solid outline-white" required />
           </label>
-          <button type="submit" className="cursor-pointer uppercase bg-linear-to-t from-pink-700 to-pink drop-shadow-sm drop-shadow-white w-60 p-4 rounded-3xl">
-            Let's J4M!!
-          </button>
+          <Botao type={"submit"} label={"Let's J4M!!"} cor="rosa" />
         </form>
       </div>
     </div>
