@@ -12,8 +12,8 @@ function CardAssinatura(props){
 
     return(
         <div className={
-            `rounded-4xl h-150 w-90 flex flex-col justify-between items-center p-8 text-white
-            ${vip ? "bg-linear-to-br from-neutral-800 to-black hover:from-black hover:to-neutral-800 transition"
+            `rounded-4xl h-150 w-90 flex flex-col justify-between items-center p-8 text-white hover:scale-[101.75%] transition
+            ${vip ? "bg-linear-to-br from-neutral-800 to-black hover:from-black hover:to-neutral-800"
             : "bg-neutral-800"}`}>
             <div className="flex flex-col gap-5 items-center">
                 <div>
