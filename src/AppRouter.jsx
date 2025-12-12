@@ -7,6 +7,7 @@ import Cadastro from "./pages/cadastro/Cadastro";
 import UploadJam from "./pages/uploadJam/UploadJam";
 import CreateJam from "./pages/createJam/CreateJam";
 import Equipe from "./pages/equipe/Equipe";
+import Assinaturas from "./pages/assinaturas/Assinaturas";
 import MinhasJams from "./pages/minhasJams/minhasJams";
 import JamDetails from "./pages/jamDetails/JamDetails";
 
@@ -21,6 +22,7 @@ function AppRouter() {
         <Route path="/equipe" element={<Equipe />} />
         <Route path="/myJams" element={<MinhasJams/>}/>
         <Route path="/jam-detail/:jamPath" element={<JamDetails/>}/>
+        <Route path="/assinaturas" element={<Assinaturas />} />
       </Route>
       <Route element={<SidebarLayout />}>
         <Route path="/login" element={<Login />} />
