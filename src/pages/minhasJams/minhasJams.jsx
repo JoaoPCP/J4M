@@ -8,6 +8,7 @@ import TagChoice from "../../components/TagChoice";
 
 const jams = Array.from({ length: 10 }, () => ({
   cover: jamCover,
+  path: "jam-teste"
 }));
 
 const tagsMock = [
