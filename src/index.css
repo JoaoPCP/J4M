@@ -18,7 +18,15 @@
     --color-white: #F8F8F8;
 }
 
-body{
-    background: linear-gradient(#110127, #3E035B 90%);
-    min-height: 100vh;
+body {
+  background: linear-gradient(#110127, #3e035b 90%);
+  min-height: 100vh;
+}
+
+.pageTitle {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  color: var(--color-pink);
+  font-family: "Orbitron";
+  text-transform: uppercase;
 }
